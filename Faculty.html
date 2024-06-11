@@ -1,0 +1,130 @@
+<html>
+   <head>
+         <title>JavaScript functions </title>
+      </head>   
+      <video autoplay muted loop id="myVideo">
+        <source src="3192052-hd_1280_720_25fps.mp4" type="video/mp4">
+      </video> 
+      <style>
+        #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+      }
+      .content {
+  position: relative;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+          body{
+        background-color: aqua;
+    }
+    @media screen and (min-width:250px){
+        body{
+            background-color: rgb(9, 141, 181);
+        }
+    }
+    @media screen and (min-width:800px){
+        body{
+            background-color: rgb(9, 181, 109);
+        }
+    }
+    h3{
+        background-color: rgb(64, 24, 175);
+    }
+    div{
+        height: 100;
+        width: 300;
+        background-color:rgb(243, 236, 236);
+    }
+    h1{
+      background-color: rgb(240, 55, 55);
+    }
+    nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        h1{
+            color: rgb(223, 33, 33);
+        }
+        p{
+            font-size: large;
+            color:blueviolet;
+        }
+      </style>  
+      <script>
+ function loginValidation() {
+             
+   var uname = document.myform.username.value;
+              
+   var password = document.myform.password.value;
+             if(uname==null || uname=="") {
+               alert("Name cant be blank")
+               return false;  
+            } else if (password.length<6){
+               alert("Password Must be 6 letters")
+               return false;
+            }  
+            return true                 
+         }           
+      </script>
+      </head>
+      <body><center>
+         <div class="content">
+          <h2>Login Page</h2>  
+<form name="myform" action="logSuccess.html" 	onsubmit="return loginValidation(this)">
+ 
+User Name : <input type="text" name="username"> <br>
+Password :  <input type="password" name="password"> <br>
+         :<input type="submit" value="Submit">     
+          
+        </form>
+    </div>
+   </body>
+<body>
+    <h1> 
+
+    </h1>
+    <body>
+        <audio controls>
+            <source src="sample-3s.mp3" type="audio/mpeg">  
+            your browser not support this audio tag
+          </audio>
+  </body>
+</center>
+</html>
